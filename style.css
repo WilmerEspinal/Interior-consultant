@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@400;700&family=Poppins:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: black;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.container-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-branding {
+    font-family: 'Lora', serif;
+    font-size: 2.4rem;
+    border: 1px solid white;
+}
+.nav-link {
+    font-size: 2rem;
+}
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out ;
+    background: white;
+}
+
+
+/* OPEN MAIN */
+main {
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatiner-text {
+    width: 40%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-info {
+    background: black;
+    width: 100%;
+    margin: 0 15px;
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Lora', serif;
+    margin-bottom: 40px;
+    color: white;
+}
+.parrafo-one {
+    font-size: 2rem;
+    color: white;
+}
+.link-read-more {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: 600;
+    color: white;
+}
+.fa-solid {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.section-images {
+    width: 55%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatainer-image-one {
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+.image-one {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.conatiner-images {
+    width: 90%;
+}
+.user {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    bottom: 40px;
+    left: 50px;
+    background: black;
+}
+.conatiner-perfile {
+    display: flex;
+    margin: 0 0 0 15px;
+    color: white;
+}
+.container-image-user {
+    width: 20%;
+    margin: 10px 0 0 5px;
+}
+.image-user {
+    width: 100%;
+    border-radius: 50%;
+}
+.datos-user {
+    margin: 20px 0 0 5px;
+}
+.name-user {
+    font-size: 1.6rem;
+}
+.job-user {
+    margin: 0 0 0 15px;
+    color: white;
+}
+/* END MAIN */
+
+footer {
+    width: 100%;
+}
+footer p {
+    text-align: center;
+    background: black;
+    color: white;
+}
+.autor {
+    color: #d3d3d3;
+}
+
+@media (max-width: 800px) {
+    main {
+        display: block;
+    }
+    .conatiner-text {
+        width: 100%;
+    }
+    .text-info {
+        margin-top: 30px;
+    }
+    .section-images {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+    .conatiner-images {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 100;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 0px;
+      gap: 0;
+      z-index: 99;
+      flex-direction: column;
+      background: black;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      transition: 00.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-item {
+          margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .container-links {
+        display: block;
+    }
+    .container-links li {
+        margin: 30px 0;
+    }
+}
+@media (max-width: 445px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    .user {
+        width: 70%;
+        left: 10px;
+    }
+    .conatiner-images {
+        width: 100%;
+    }
+}
